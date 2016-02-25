@@ -188,9 +188,9 @@ $(document).ready(function() {
       if(lastRequest && lastRequest.readyState != 4) {
         lastRequest.abort();
       }
-      
+// NEEDS UPDATE BECAUSE THIS API IS OUTDATED
       // Make the JSONP call to Twitter
-      lastRequest = $.ajax("http://search.twitter.com/search.json", {
+      lastRequest = $.ajax("https://twitter.com/search", {
         cache: false,
         crossDomain: true,
         data: {
